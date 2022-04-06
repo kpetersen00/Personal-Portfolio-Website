@@ -21,7 +21,7 @@
     -->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Kyle Petersen</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,10 +42,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recent Work</a>
+              <a class="nav-link" href="#portfolio">Recent Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Contact</a>
+              <a href="#footer" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -59,24 +59,30 @@
         <div class="row align-items-center text-white">
           <div class="col-md-6 intro">
             <h1 class="display-2">
-              <span class="display-2--intro">Hey! I'm Kyle</span>
+              <span id="greeting" class="display-2--intro">Hey! I'm Kyle</span>
               <span class="display-2--description lh-base"
-                >This is a multi-purpose responsive layout created with
-                bootstrap V5. (here you can place your description)</span
+                >I am a driven, ambitious, self-taught software developer. Tech
+                has always been a passion of mine. With every new programming
+                language I learn, I only get more excited about it. I love the
+                challenge of learning something new and applying it.</span
               >
             </h1>
-            <button class="rounded-pill btn-rounded" type="button">
+            <a
+              class="rounded-pill btn-rounded"
+              href="https://www.linkedin.com/in/kyle-petersen-15ba17160/"
+              target="_blank"
+            >
               Get in Touch<span><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
+            </a>
           </div>
           <div class="col-md-6 intro text-end">
-            <div class="video-box">
+            <div class="illustration-box">
               <img
                 src="images/arts/Coding _Monochromatic.png"
                 alt="coding illustration"
                 class="img-fluid"
               />
-              <a href="#"
+              <a href="https://github.com/kpetersen00" target="_blank"
                 ><span><i class="fab fa-github"></i></span>
                 <span
                   class="border-animation border-animation--border-1"
@@ -95,10 +101,186 @@
         ></path>
       </svg>
     </section>
+    <!-- 
+     start of portfolio section
+     -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="display-3 fw-bold">Latest Work</h1>
+          <div class="heading-line mb-5"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-box shadow">
+              <a
+                href="https://exercise-logger-app.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  src="images/arts/projects/exercise.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>exercise tracker app</h4>
+                    <p>
+                      Web app that use React, mongoDB and Firebase to log daily
+                      exercise activity
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-box shadow">
+              <a
+                href="https://codepen.io/kpetersen00/pen/mdMvEyO"
+                target="_blank"
+              >
+                <img
+                  src="images/arts/projects/breakTimer.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>break Timer</h4>
+                    <p>
+                      App that uses React to set a session timer that sounds an
+                      alarm then switches to a break timer
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-box shadow">
+              <a
+                href="https://codepen.io/kpetersen00/pen/abyVrae"
+                target="_blank"
+              >
+                <img
+                  src="images/arts/projects/calculator.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Calculator</h4>
+                    <p>A calculator made from React to use formula logic</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-box shadow">
+              <a
+                href="https://codepen.io/kpetersen00/pen/GRMQMvv"
+                target="_blank"
+              >
+                <img
+                  src="images/arts/projects/USmap.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>US map of Education</h4>
+                    <p>
+                      A map of the U.S that uses Javascript and D3 to show the
+                      percentage of people who obtain a bachelors degree or
+                      higher per county
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+     start of footer section
+     -->
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="row text-center mt-2 footer-heading">
+          <h1 class="fw-bold">Where to Find Me</h1>
+          <div class="heading-line mb-5"></div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-4 col-lg-4 contact-box pt-1 d-flex d-md-block d-lg-flex"
+          >
+            <div class="contact-box__icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-box__info">
+              <a
+                href="mailto: kspetersen2000@gmail.com"
+                class="contact-box__info--title"
+                >kspetersen2000@gmail.com</a
+              >
+              <p class="contact-box__info--subtitle">My Email</p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 contact-box pt-1 d-flex d-md-block d-lg-flex"
+          >
+            <div class="contact-box__icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-box__info">
+              <a
+                href="https://www.linkedin.com/in/kyle-petersen-15ba17160/"
+                target="_blank"
+                class="contact-box__info--title"
+                >Kyle Petersen</a
+              >
+              <p class="contact-box__info--subtitle">My LinkedIn</p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 contact-box pt-1 d-flex d-md-block d-lg-flex"
+          >
+            <div class="contact-box__icon"><i class="fab fa-github"></i></div>
+            <div class="contact-box__info">
+              <a
+                href="https://github.com/kpetersen00"
+                class="contact-box__info--title"
+                target="_blank"
+                >kpetersen00</a
+              >
+              <p class="contact-box__info--subtitle">My GitHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+      const greeting = document.getElementById('greeting');
+      const date = new Date();
+      const hour = date.getHours();
+      console.log(greeting);
+      if (hour >= 0 && hour <= 11) {
+        greeting.textContent = "Good Morning, I'm Kyle";
+      } else if (hour > 11 && hour < 19) {
+        greeting.textContent = "Good Afternoon, I'm Kyle";
+      } else if (hour >= 19 && hour < 24) {
+        greeting.textContent = "Good Evening, I'm Kyle";
+      }
+    </script>
   </body>
 </html>

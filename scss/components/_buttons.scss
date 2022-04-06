@@ -8,7 +8,7 @@
   margin: 0;
   border: 0.1rem solid rgba($white, 0.6);
   background-color: $white;
-
+  text-decoration: none;
   span {
     position: absolute;
     background-color: $primary;
@@ -19,6 +19,7 @@
     transform: translateY(-50%);
     border-radius: 50%;
     i {
+      @include absoluteCenter;
       color: $white;
       font-size: 1rem;
       line-height: 2.5rem;
