@@ -5,8 +5,8 @@ const path = require('path');
 
 app.use(cors({ optionsSuccessStatus: 200 }));
 
-app.use(express.static('assets'));
-app.use(express.static('images'));
+app.use(express.static(path.join(__dirname + 'assets')));
+app.use(express.static(path.join(__dirname + 'images')));
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
